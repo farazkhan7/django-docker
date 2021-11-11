@@ -1,8 +1,12 @@
 version: '3.7'
 
 services:
+  redis:
+    image: "redis:alpine"
   web:
     build: .
+    environment:
+      - REDIS_HOST=redis
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - ./:/src
