@@ -43,4 +43,4 @@ docker-compose exec web python manage.py makemigrations
 docker-compose -f docker-compose.prod.yml down
 ```
 ### Note: Refer to env.sample.md file for details about setting env variables
-### The site will be live on port 8000 by default
+### The site will be live on port 8008 by default
