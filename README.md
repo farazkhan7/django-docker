@@ -1,22 +1,22 @@
 # Skeleton project for django based applications
 ## For Development
 ### Build
-```shell 
+```shell
 docker-compose build --no-cache
 ```
 
 ### Up
-```shell 
+```shell
 docker-compose up -d
 ```
 
 ### Make migrations
-```shell 
+```shell
 docker-compose exec web python manage.py makemigrations
 ```
 
 ### Down
-```shell 
+```shell
 docker-compose down
 ```
 ### Note: Refer to env.sample.md file for details about setting env variables
@@ -24,22 +24,22 @@ docker-compose down
 
 ## For Production
 ### Build
-```shell 
+```shell
 docker-compose -f docker-compose.prod.yml build --no-cache
 ```
 
 ### Up
-```shell 
+```shell
 docker-compose -f docker-compose.prod.yml up -d
 ```
 
 ### Make migrations
-```shell 
+```shell
 docker-compose exec web python manage.py makemigrations
 ```
 
 ### Down
-```shell 
+```shell
 docker-compose -f docker-compose.prod.yml down
 ```
 ### Note: Refer to env.sample.md file for details about setting env variables

@@ -1,7 +1,7 @@
 # Structure of env files for development and production
 ## For Development
 ### create a file name .env.dev
-```shell 
+```shell
 DEBUG=1
 SECRET_KEY=<-!g..YOUR SECRET KEY..>
 DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
@@ -18,7 +18,7 @@ DATABASE=postgres
 
 ## For Production
 ### create a file name .env.prod
-```shell 
+```shell
 DEBUG=0
 SECRET_KEY=<-!g..YOUR SECRET KEY..>
 DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
