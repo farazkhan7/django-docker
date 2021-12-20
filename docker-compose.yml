@@ -7,11 +7,11 @@ services:
     build: .
     environment:
       - REDIS_HOST=redis
-    command: python manage.py runserver 0.0.0.0:8000
+    command: python manage.py runserver 0.0.0.0:8008
     volumes:
       - ./:/src
     ports:
-      - 8000:8000
+      - 8008:8008
     env_file:
       - ./.env.dev
     depends_on:
